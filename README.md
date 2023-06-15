@@ -104,8 +104,10 @@ print(f"\nBusca em largura a partir do vértice 0: {grafo.busca_largura(0)}")
 Aqui está um exemplo completo de como utilizar a classe Grafo:
 
 ```python
+qtd_arestas = 4
+
 # Criando o grafo
-grafo = Grafo(4)
+grafo = Grafo(qtd_arestas)
 
 # Adicionando arestas
 grafo.adicionar_aresta(0, 1, 2)
@@ -130,7 +132,7 @@ for i, adj in enumerate(grafo.lista_adjacencia()):
 
 # Exibindo o grau de cada vértice
 print("\nGrau de vértices:")
-for i in range(4):
+for i in range(qtd_arestas):
     print(f"Grau do vértice {i}: {grafo.grau_vertice(i)}")
 
 # Exibindo o grau médio do grafo
